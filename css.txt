@@ -1,0 +1,12 @@
+TAGS AND PROPERTIES USED:
+Things written in '*' will be applied to everything.
+
+Things done on #nav:
+
+used 'justify-content:flex start' to arrange nav elements at the start horizontally
+used 'position:fixed' to keep nav all the time while scrolling also
+used 'z-index:99' to keep nav above the video and everything all the time 
+
+
+
+

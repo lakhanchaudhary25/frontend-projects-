@@ -1,0 +1,4 @@
+TAGS AND PROPERTIES USED:
+Used video tag to put video and stored its location or address in 'src' attribute
+Used 'autoplay loop muted' , these three attributes will keep my video playing on loop .
+Used 'muted' because sound shouldnt be automatically played in any browser. 
