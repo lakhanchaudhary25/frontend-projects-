@@ -1,0 +1,10 @@
+downloaded 'Gsap cdn' for smooth scorlling animations.
+and also pasted the 'scroll trigger' , which is a plugin of gsap .
+
+use gsap like: gsap.to("#nav",{
+    // write any property yiu want to give to nav
+    //or we can access any css property but used camil cases instead of '-' in between
+    used scrollTrigger{
+        //any property 
+    }
+})
