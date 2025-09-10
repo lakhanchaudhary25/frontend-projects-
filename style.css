@@ -28,12 +28,21 @@ width:100%;}
 #cursor{
     height:20px;
     width:20px;
-    background-color: rgb(17, 19, 17);
+    background-color: #95c11e;
     border-radius: 50%;
     position: fixed;
     z-index:99;
     
     
+}
+#cursor-blur{
+    height:400px;
+    width:400px;
+    background-color: #96c11e4a;
+    border-radius: 50%;
+    position: fixed;
+    filter:blur(40px);
+    z-index: 10;
 }
 #nav h4{
     font-weight:300;
@@ -60,6 +69,7 @@ video{
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
+    z-index: 10;
 
 }
 #page1 h1{
@@ -94,4 +104,93 @@ video{
 #page2{
     height: 100vh;
     width: 100%;
+    z-index: 10;
+}
+#scroller {
+    
+    white-space: nowrap;
+    /* background-color: #95c11e; */
+     
+    
+
+}
+
+#scroller-in{
+     white-space: nowrap;
+    display: inline-block;
+     overflow-x: auto;
+    overflow-y: hidden;
+    animation-name:scroll;
+ animation-duration: 20s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+ position: relative;
+     z-index: 10;
+  
+}
+#scroller h4{
+        display: inline-block;
+    font-size: 110px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right: 20px;
+    -webkit-text-stroke:1px white;
+    color:transparent;
+    transition: 0.5s;
+    z-index: 99;
+
+}
+#scroller h4:hover{
+    color: #95c11e;
+}
+
+   
+
+@keyframes scroll{
+    from{
+        transform:translateX(0)
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#about-us{
+    height: 30vh;
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0 60px;
+    
+    
+}
+#about-us img{
+    height:130px;
+    width:120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top:230px;
+    position: relative;
+    z-index: 10;
+}
+#about-us-in h3{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding:20px;
+    margin-top: 220px;
+    
+
+}
+#about-us-in p{
+    
+    text-align: center;
+    width:550px;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 35px;
+
 }

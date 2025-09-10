@@ -1,3 +1,4 @@
+var crsr= document.querySelector("#cursor")
 gsap.to("#nav",{
     backgroundColor:"black",
     height:"125px",
@@ -25,7 +26,19 @@ gsap.to("#main",{
     scrub:2,
 }
 })
-Document.queryselector
-document.addEventListener("mousemove",function(dets){
+var crsrblur= document.querySelector("#cursor-blur")
 
-})
+
+document.addEventListener("mousemove", function(dets){
+    gsap.to(crsr, {
+        x: dets.x,
+        y: dets.y,
+        duration: 0.3  // smaller = faster, bigger = slower
+    });
+
+    gsap.to(crsrblur, {
+        x: dets.x - 200,
+        y: dets.y - 200,
+        duration: 0.9  // makes it smoother
+    });
+});
