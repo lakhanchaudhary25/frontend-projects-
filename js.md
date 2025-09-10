@@ -1,3 +1,5 @@
+#java script notes:
+
 downloaded 'Gsap cdn' for smooth scorlling animations.
 and also pasted the 'scroll trigger' , which is a plugin of gsap .
 
