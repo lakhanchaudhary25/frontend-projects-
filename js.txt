@@ -8,3 +8,6 @@ use gsap like: gsap.to("#nav",{
         //any property 
     }
 })
+in this we have to define what thing we are going to trigger "nav"
+and what is being scrolled "body"
+used top, end and scrub.

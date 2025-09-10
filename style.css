@@ -25,6 +25,16 @@ width:100%;}
     width:150px;
     
 }
+#cursor{
+    height:20px;
+    width:20px;
+    background-color: rgb(17, 19, 17);
+    border-radius: 50%;
+    position: fixed;
+    z-index:99;
+    
+    
+}
 #nav h4{
     font-weight:300;
 }
