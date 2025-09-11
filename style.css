@@ -36,12 +36,12 @@ width:100%;}
     
 }
 #cursor-blur{
-    height:400px;
-    width:400px;
-    background-color: #96c11e4a;
+    height:350px;
+    width:350px;
+    background-color: #96c11e69;
     border-radius: 50%;
     position: fixed;
-    filter:blur(40px);
+    filter:blur(80px);
     z-index: 10;
 }
 #nav h4{
@@ -102,7 +102,7 @@ video{
     
 }
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     z-index: 10;
 }
@@ -110,7 +110,7 @@ video{
     
     white-space: nowrap;
     /* background-color: #95c11e; */
-     
+     overflow: hidden;
     
 
 }
@@ -118,8 +118,7 @@ video{
 #scroller-in{
      white-space: nowrap;
     display: inline-block;
-     overflow-x: auto;
-    overflow-y: hidden;
+     
     animation-name:scroll;
  animation-duration: 20s;
  animation-iteration-count: infinite;
@@ -165,13 +164,14 @@ video{
     padding:0 60px;
     
     
+    
 }
 #about-us img{
     height:130px;
     width:120px;
     border-radius: 10px;
     object-fit: cover;
-    margin-top:230px;
+    margin-top:330px;
     position: relative;
     z-index: 10;
 }
@@ -189,8 +189,132 @@ video{
     
     text-align: center;
     width:550px;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
     line-height: 35px;
 
+}
+#cards-container{
+    height:65vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 200px;
+    align-items: center;
+    padding: 45px;
+    display: flex;
+    gap:70px;
+    justify-content: center;
+    z-index: 10;
+    position: relative
+    ;
+
+}
+.card{
+    height: 80%;
+    width:22%;
+    /* background-color: blue; */
+    border-radius: 18px;
+    background-size: cover;
+    background-position: center;
+    overflow:hidden;
+    transition: all ease 0.6s;
+    perspective: 800;
+}
+#cd1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&w=960&ssl=1);
+    
+}
+#cd2{
+    background-image: url(https://imgs.search.brave.com/eaFkgeWBApQnaetEaLkxH9_HGUOsA3b4YOJ8dSC4dc8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTgy/ODU5MTI3L3Bob3Rv/L2dsZW5lYWdsZXMt/Z29sZi1raW5ncy1j/b3Vyc2UtcGVydGhz/aGlyZS1zY290bGFu/ZC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9bHlTbFlXODJE/cmRKR2pqV19iWnZy/dXRfZ25XVFhUWHJH/eDBtYjRtWXB1cz0);
+}
+#cd3{
+    background-image: url(https://imgs.search.brave.com/SuhuZInbjYBtAlnVsgBw7LASJqdMLDyWX06TMPg1ugg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzUwL2Qx/L2M1LzUwZDFjNTA0/ZjZiMTRiZmY3Yjg1/YTNmMjcyNWMzODY1/LmpwZw)}
+
+.overlay{
+    height: 100%;
+    width:100%;
+    background-color: #95c11e;
+    
+ padding-top:65px;
+ transition:all ease 0.6s;
+ opacity:0;
+}
+.overlay h4{
+   
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}
+.overlay p{
+    
+    padding: 5px 20px;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    transform:rotate3d(-1,1,0,18deg)
+    
+}
+#green-container{
+    display: flex;
+    height: 30vh;
+    width:100%;
+    /* background-color:rgb(166, 9, 9); */
+    justify-content: space-between;
+    padding: 5px;
+    /* background: linear-gradient(45deg, rgb(168, 255, 62) ,  darkgreen); */
+
+   background: linear-gradient(135deg, #d4e157, #8bc34a, #00813c);
+
+
+}
+#green-container h4{
+    margin:25px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    width: 45%;
+    line-height: 50px;
+    color: black;
+}
+#green-container img{
+    object-fit: cover;
+    width: 20vh;
+}
+#page3{
+    height:100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+#page3>p{
+    font-size:23px;
+    font-weight: 700;
+    width:55%;
+    text-align: center;
+    line-height:37px;
+
+}
+#page3 img{
+    position: absolute;
+    height:40px;
+
+}
+#page3 #col1{
+    left:17%;
+    top:29%;
+}
+#page3 #col2{
+    right:18%;
+    top:65%;
 }

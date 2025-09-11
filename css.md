@@ -12,6 +12,8 @@ also used "z-index:-1" to keep video at the back all the time.
 Things done on #main:
 Used 'position:relative' to keep the childern div inside the container main div.
 
+used filter:blur(40px)
+//to provide blur to cursor div 
 
 Things done on page1:
 '#page' was gievn height:100vh, 'vh' stands for viewport height , it is used to give height according to the size of screen.
@@ -31,4 +33,29 @@ like- #page h1::befor{
     // this is used to create a border for not whole boxxy style for h1 but instead , for border surrounding text EAT  
 }
 
+@keyframes scroll{
+    from{
+        transform:translateX(0)
+    }
+    to{
+        transform: translateX(-100%);
+    }
+} 
+ animation-name:scroll;
+ animation-duration: 14s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+ position: relative;
+// for adding scrolling animation
 
+added hover with transition 0.5 sec for smother transition
+
+used "opacity" with hover to create a text transition when hovered the cards 
+used transition:all ease 0.6s ;
+// for smoother transition
+
+used "transform:rotate3d(x,y,z,degree)" in card:hover
+// for tilt transition
+
+used "background: linear-gradient(135deg, #d4e157, #8bc34a, #00813c);"
+for beautiful diagonal gradient for geen-container
