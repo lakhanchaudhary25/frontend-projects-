@@ -55,7 +55,7 @@ document.addEventListener("mousemove", function(dets){
      elem.addEventListener("mouseleave", function() {
     gsap.to(crsr, {
       scale: 1,
-      border: "0px solid white",
+      border: "0px solid #95c11e",
       backgroundColor: "white",
       duration: 0.2,
       ease: "power2.inOut"
